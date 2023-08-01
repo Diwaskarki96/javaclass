@@ -1,1 +1,1 @@
-# javaclass
+# javascriptclass
