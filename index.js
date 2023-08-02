@@ -14,15 +14,26 @@
 // let person2 = "Ram";
 // person2 = "shyam";
 // console.log(person2);
+
 //chapter 2 "Interaction"
 //alert("message");
 //prompt("enter your name");
 //confirm("are you sure");
-const name = prompt("Enter your name");
-const password = prompt("Enter your password");
+// const name = prompt("Enter your name");
+// confirm("Are you sure")
+// const password = prompt("Enter your password");
 
+// if (name ==="diwas" && password ==="123") {
+//     confirm("Are you sure") && 
+//     alert("Welcome to our Website");
+// }
 
-if (name ==="diwas" && password ==="123") {
-    confirm("Are you sure") && 
-    alert("Welcome to our Website");
+//Chapter 3 "Operator"
+let hour = 17;
+if (hour > 14 && hour < 18){
+    alert ("JS Class is running");
+}
+const isValid = True;  //const isValid = false; garda chai chalxa
+if(!isValid) {
+    alert("it is not valid");
 }
