@@ -47,5 +47,10 @@
 //     alert("a is less than 0");
 // }
 //termary operator (mathi tala same)
-let a = 0
-a > 0 ? alert("a is greater than 0") : alert("a is less than 0");
+// let a = 0
+// a > 0 ? alert("a is greater than 0") : alert("a is less than 0");
+
+//for loop
+for (let a = 0; a < 10; a++){
+    console.log(a);
+}
