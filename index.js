@@ -56,10 +56,19 @@
 // }
 
 // while loop
+// let a = 1;
+
+// while (a <= 5) {
+//   console.log(a);
+//   a++;
+// }
+
+//do while loop
 let a = 1;
 
-while (a <= 5) {
+do {
   console.log(a);
   a++;
-}
+} while (a <= 5);
+
 
