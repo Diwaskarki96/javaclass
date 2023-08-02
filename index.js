@@ -29,11 +29,23 @@
 // }
 
 //Chapter 3 "Operator"
-let hour = 17;
-if (hour > 14 && hour < 18){
-    alert ("JS Class is running");
-}
-const isValid = True;  //const isValid = false; garda chai chalxa
-if(!isValid) {
-    alert("it is not valid");
-}
+// let hour = 17;
+// if (hour > 14 && hour < 18){
+//     alert ("JS Class is running");
+// }
+// const isValid = True;  //const isValid = false; garda chai chalxa
+// if(!isValid) {
+//     alert("it is not valid");
+// }
+
+//"Statement"
+// let a=2;
+// if (a>0) {
+//     alert ("a is greater than 0");
+// }
+// else{
+//     alert("a is less than 0");
+// }
+//termary operator (mathi tala same)
+let a = 0
+a > 0 ? alert("a is greater than 0") : alert("a is less than 0");
