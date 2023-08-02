@@ -51,6 +51,15 @@
 // a > 0 ? alert("a is greater than 0") : alert("a is less than 0");
 
 //for loop
-for (let a = 0; a < 10; a++){
-    console.log(a);
+// for (let a = 0; a < 10; a++){
+//     console.log(a);
+// }
+
+// while loop
+let a = 1;
+
+while (a <= 5) {
+  console.log(a);
+  a++;
 }
+
