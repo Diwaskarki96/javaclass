@@ -127,10 +127,27 @@
 // }
 // hello(a,b);
 //function adding 2 number
-const sum = (a,b)=>{
-  let c = a+b
-    console.log(c)
+// const sum = (a,b)=>{
+//   let c = a+b
+//     console.log(c)
+//   }
+//   sum(5,6);
+// const add = (a,b) =>{
+  
+//   return a+b;
+// }  ;
+// const result = add(2,3);
+// console.log(result);
+
+const add = (a,b) =>{
+  if (a > 0 && b > 0) {
+    return a + b;
   }
-  sum(5,6);
+  return "Negative value has been added";
+};
+const result = add(-1,-3);
+console.log(result); "Negative value has been added"
+const result1 = add(1,2,);
+console.log(result); 
 
 
