@@ -139,15 +139,32 @@
 // const result = add(2,3);
 // console.log(result);
 
-const add = (a,b) =>{
-  if (a > 0 && b > 0) {
-    return a + b;
-  }
-  return "Negative value has been added";
-};
-const result = add(-1,-3);
-console.log(result); "Negative value has been added"
-const result1 = add(1,2);
-console.log(result1); 
+// const add = (a,b) =>{
+//   if (a > 0 && b > 0) {
+//     return a + b;
+//   }
+//   return "Negative value has been added";
+// };
+// const result = add(-1,-3);
+// console.log(result); "Negative value has been added"
+// const result1 = add(1,2);
+// console.log(result1); 
 
+//Datatype
+const num = Number(prompt("Enter your age"));
+console.log(typeof num);
 
+// let age = 25; // Integer
+// let pi = 3.14; // Float
+// let name = "John"; // String
+// let isStudent = true; // Boolean
+// let fruits = ["apple", "banana", "orange"]; // Array
+// let person = { name: "John", age: 30, city: "New York" }; // Object
+// let emptyValue = null; // Null
+// let notAssigned; // Undefined
+
+// function sayHello() {
+//   console.log("Hello!");
+// } // Function
+
+// let currentDate = new Date(); // Date
