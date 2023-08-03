@@ -151,8 +151,8 @@
 // console.log(result1); 
 
 //Datatype
-const num = Number(prompt("Enter your age"));
-console.log(typeof num);
+// const num = Number(prompt("Enter your age"));
+// console.log(typeof num);
 
 // let age = 25; // Integer
 // let pi = 3.14; // Float
@@ -168,3 +168,6 @@ console.log(typeof num);
 // } // Function
 
 // let currentDate = new Date(); // Date
+
+const date = new Date();
+console.log(date);
