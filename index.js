@@ -147,7 +147,7 @@ const add = (a,b) =>{
 };
 const result = add(-1,-3);
 console.log(result); "Negative value has been added"
-const result1 = add(1,2,);
-console.log(result); 
+const result1 = add(1,2);
+console.log(result1); 
 
 
