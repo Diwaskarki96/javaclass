@@ -172,15 +172,58 @@
 // const date = new Date();
 // console.log(date);
 // Object(Real life objects, Properties and Methods)
-const person = {
-    firstName: "Diwas",
-    lastName: "Karki",
-    fullName() {
-      return this.firstName + " " + this.lastName;
-    }
+// const person = {
+//     firstName: "Diwas",
+//     lastName: "Karki",
+//     fullName() {
+//       return this.firstName + " " + this.lastName;
+//     }
+//   };
+//   console.log(person.fullName()); 
+  
+//   const Car = {
+//     name : "Hyundai",
+//     year : "2002",
+//     Cardetail() {
+//       return this.name + " " + this.year;
+//     }
+//   };
+//   console.log(Car.Cardetail());   
+  
+//   const bike = {
+//     brand : "KTM",
+//     name : "RC",
+//     year : "2002",
+
+//     bikedetail() {
+//       return this.brand + " " + this.name + " " + this.year;
+//     }
+//   };
+//   console.log(bike.bikedetail()); 
+
+//   const College = {
+//     name : "Trinity",
+//     Year : "1956",
+//     location : "kathmandu",
+//     Collegedetail(){
+//         return this.name + " " + this.Year + " " + this.location; 
+//     }
+//   };
+//   console.log(College.Collegedetail());
+
+const mobile = {
+    name: "andriod",
+    year: "2002",
+    ramInGb: 12, 
+    doeswork: () => {
+      return mobile.name === "andriod" || mobile.ramInGb < 10
+        ? console.log("this device is uncompatible")
+        : console.log("this device is compatible");
+    },
   };
   
-  console.log(person.fullName()); 
-
+  const opbr = mobile.doeswork();
+   
   
+
   
