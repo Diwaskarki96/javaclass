@@ -169,5 +169,16 @@
 
 // let currentDate = new Date(); // Date
 
-const date = new Date();
-console.log(date);
+// const date = new Date();
+// console.log(date);
+// Object(Real life objects, Properties and Methods)
+const person = {
+    firstName: "Diwas",
+    lastName: "Karki",
+    fullName() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+  
+  
+  
