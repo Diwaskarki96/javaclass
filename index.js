@@ -262,20 +262,48 @@
 // map,find,filter,reduce,sort //imutable.js
 // concat,join,slice,splice,forEach
 
-const person = [
-      {name: "ram",age: 20},
-      {name: "shyam",age: 24},
-      {name: "hari", age: 5},
-   ];
-const personFunction = (person) => {
-   // starting
-   return person.name;
-};
-const newPerson2 = person.map(personFunction); //staring
+// const person = [
+//       {name: "ram",age: 20},
+//       {name: "shyam",age: 24},
+//       {name: "hari", age: 5},
+//    ];
+// const personFunction = (person) => {
+//    // starting
+//    return person.name;
+// };
+// const newPerson2 = person.map(personFunction); //staring
 
-const newPersons = person.map((person) => {
-//2nd step
-return person.name;
-});
-const newPerson = person.map((person) => person.name); //final step
-console.log({person, newPerson, newPersons, newPerson2});
+// const newPersons = person.map((person) => {
+// //2nd step
+// return person.name;
+// });
+// const newPerson = person.map((person) => person.name); //final step
+// console.log({person, newPerson, newPersons, newPerson2});
+
+   // Destructuring Objects
+// const person = {
+//    username: "diwas",
+//    password: "karki",
+//    role: "admin",
+//    isActive: true,
+//  };
+//  const { username, ...rest } = person;
+//  console.log({ rest });
+//  console.log({ person });
+ 
+ // Sample object
+const person = {
+   name: "Diwas Karki",
+   age: 22,
+   city: "Ktm",
+   occupation: "Engineer"
+ };
+ 
+ // Destructuring the object
+ const { name, age, occupation } = person;
+ 
+ // Now you can use the extracted properties as separate variables
+ console.log(name); // Output: "Diwas Karki"
+ console.log(age); // Output: 22
+ console.log(occupation); // Output: "Engineer"
+ 
