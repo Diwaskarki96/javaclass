@@ -211,19 +211,53 @@
 //   };
 //   console.log(College.Collegedetail());
 
-const mobile = {
-    name: "andriod",
-    year: "2002",
-    ramInGb: 12, 
-    doeswork: () => {
-      return mobile.name === "andriod" || mobile.ramInGb < 10
-        ? console.log("this device is uncompatible")
-        : console.log("this device is compatible");
-    },
-  };
+// const mobile = {
+//     name: "andriod",
+//     year: "2002",
+//     ramInGb: 12, 
+//     doeswork: () => {
+//       return mobile.name === "andriod" || mobile.ramInGb < 10
+//         ? console.log("this device is uncompatible")
+//         : console.log("this device is compatible");
+//     },
+//   };
   
-  const opbr = mobile.doeswork();
-   
+//   const opbr = mobile.doeswork();
   
+// practice
+// function onePlusAvg(x,y){
+//   return 1+(x+y)/2
+// }
+// let a = 1;
+// let b = 2;
 
-  
+// console.log("One plus Average of a and b is ", onePlusAvg(a,b))
+
+// practice
+// const hello = ()=>{
+//    console.log("hello");
+// }
+// hello();
+
+// Array
+// const arr = ["a","b","c",23,true,{},[]];
+// console.log(arr.length);
+// console.log(arr[0]);
+// console.log(arr.pop());
+// arr.push("sita");
+
+ 
+// const person = [
+//    {name: "ram",age: 20},
+//    {name: "shyam",age: 24},
+//    {name: "hari", age: 5},
+// ]
+// // sort in accending order of persons arry by age
+// const age = person.sort((a,b) => {
+//    return a.age - b.age;
+
+// });
+// console.log(age);
+// length,sort,push,pop
+// map,find,filter,reduce,sort //imutable.js
+// concat,join,slice,splice,forEach
