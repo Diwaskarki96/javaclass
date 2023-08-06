@@ -261,3 +261,21 @@
 // length,sort,push,pop
 // map,find,filter,reduce,sort //imutable.js
 // concat,join,slice,splice,forEach
+
+const person = [
+      {name: "ram",age: 20},
+      {name: "shyam",age: 24},
+      {name: "hari", age: 5},
+   ];
+const personFunction = (person) => {
+   // starting
+   return person.name;
+};
+const newPerson2 = person.map(personFunction); //staring
+
+const newPersons = person.map((person) => {
+//2nd step
+return person.name;
+});
+const newPerson = person.map((person) => person.name); //final step
+console.log({person, newPerson, newPersons, newPerson2});
