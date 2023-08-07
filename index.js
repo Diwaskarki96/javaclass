@@ -292,18 +292,22 @@
 //  console.log({ person });
  
  // Sample object
-const person = {
-   name: "Diwas Karki",
-   age: 22,
-   city: "Ktm",
-   occupation: "Engineer"
- };
+// const person = {
+//    name: "Diwas Karki",
+//    age: 22,
+//    city: "Ktm",
+//    occupation: "Engineer"
+//  };
  
- // Destructuring the object
- const { name, age, occupation } = person;
+//  // Destructuring the object
+//  const { name, age, occupation } = person;
  
- // Now you can use the extracted properties as separate variables
- console.log(name); // Output: "Diwas Karki"
- console.log(age); // Output: 22
- console.log(occupation); // Output: "Engineer"
+//  // Now you can use the extracted properties as separate variables
+//  console.log(name); // Output: "Diwas Karki"
+//  console.log(age); // Output: 22
+//  console.log(occupation); // Output: "Engineer"
+
+
+   
  
+
