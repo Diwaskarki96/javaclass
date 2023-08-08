@@ -1,0 +1,5 @@
+1. use "upper-case" package and create a function to convert user input to upper case 
+// const input = "hello"
+2. use "moment" package to convert current date to "8th Aug 2023" format
+3. create function that convert "mr raktim shrestha" to "MR RAKTIM SHRESTHA"
+4. use "lodash" package to trim the while space from "   mr Raktim Shrestha  " to "mr Raktim Shrestha".
