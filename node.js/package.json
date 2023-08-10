@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "upper-case": "^2.0.2"
+    "qrcode": "^1.5.3"
   }
 }
