@@ -39,25 +39,59 @@ plan of action:
 //   main().catch(console.error);
 
 //   2. Send email to multiple users by creating email function
+//   const nodemailer = require("nodemailer");
+// const transporter = nodemailer.createTransport({
+//     host: "smtp.gmail.com",
+//     port: 465,
+//     secure: true,
+//     auth: {
+//       // TODO: replace `user` and `pass` values from <https://forwardemail.net>
+//       user: 'diwaskarki96@gmail.com',
+//       pass: 'bdbaatzjvfpwilll'
+//     }
+//   });
+//   async function main() {
+//     // send mail with defined transport object
+//     const info = await transporter.sendMail({
+//       from: '"Diwash Karki" <diwaskarki96@gmail.com>', // sender address
+//       to: receivers.toString(), // list of receivers
+//       subject: "Hello ✔", // Subject line
+//       text: "Hello world?", // plain text body
+//       html: "<b>Hello world?</b>", // html body
+//     });
+  
+//     console.log("Message sent: %s", info.messageId);
+    
+//   }
+//   const receivers = ["diwaskarki96@gmail.com","diwaskarki@ismt.edu.np"];
+
+//   main().catch(console.error);
+
+//   3. Email template(designed template)
   const nodemailer = require("nodemailer");
+  const handlebar = require("handlebar");
+  const { promissify } = require("util");
+  const fs = require("fs")
+  const readfile = promis
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {
-      // TODO: replace `user` and `pass` values from <https://forwardemail.net>
       user: 'diwaskarki96@gmail.com',
       pass: 'bdbaatzjvfpwilll'
     }
   });
-  async function main() {
-    // send mail with defined transport object
+  async function main(receivers, data, htmlFile) {
+    const html = aiat readFile
     const info = await transporter.sendMail({
-      from: '"Diwash Karki" <diwaskarki96@gmail.com>', // sender address
-      to: receivers.toString(), // list of receivers
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>", // html body
+      from: '"Diwash Karki" <diwaskarki96@gmail.com>', 
+      to: receivers.toString(), 
+      subject: "Hello ✔", 
+      template: 'email',
+   context: {
+       name: 'Name'
+   }
     });
   
     console.log("Message sent: %s", info.messageId);
