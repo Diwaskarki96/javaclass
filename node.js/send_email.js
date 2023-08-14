@@ -68,35 +68,44 @@ plan of action:
 //   main().catch(console.error);
 
 //   3. Email template(designed template)
-  const nodemailer = require("nodemailer");
-  const handlebar = require("handlebar");
-  const { promissify } = require("util");
-  const fs = require("fs")
-  const readfile = promis
-const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: 'diwaskarki96@gmail.com',
-      pass: 'bdbaatzjvfpwilll'
-    }
-  });
-  async function main(receivers, data, htmlFile) {
-    const html = aiat readFile
-    const info = await transporter.sendMail({
-      from: '"Diwash Karki" <diwaskarki96@gmail.com>', 
-      to: receivers.toString(), 
-      subject: "Hello ✔", 
-      template: 'email',
-   context: {
-       name: 'Name'
-   }
-    });
-  
-    console.log("Message sent: %s", info.messageId);
-    
-  }
-  const receivers = ["diwaskarki96@gmail.com","diwaskarki@ismt.edu.np"];
+const nodemailer = require("nodemailer");
+const handlebars = require("handlebars");
+const { promisify } = require("util");
+const fs = require("fs");
 
-  main().catch(console.error);
+const readFile = promisify(fs.readFile);
+
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
+  auth: {
+    user: "diwaskarki96@gmail.com",
+    pass: "qmivoapxrakoeoey",
+  },
+});
+
+async function main(receivers, data, htmlFile) {
+  const html = await readFile(htmlFile, "utf8");
+  const template = handlebars.compile(html);
+
+  const htmlToSend = template(data);
+
+  const info = await transporter.sendMail({
+    from: '"Diwash Karki" <diwaskarki96@gmail.com>', // sender address
+    to: receivers.toString(), // list of receivers
+    subject: "Hello ✔", // Subject line
+    html: htmlToSend,
+  });
+
+  console.log("Message sent: %s", info.messageId);
+}
+
+// Change here
+const data = {
+  name: "Diwash Karki",
+  msg: "How are you??",
+};
+const htmlFile = "./welcome.html";
+const receivers = ["diwaskarki96@gmail.com"];
+main(receivers, data, htmlFile).catch(console.error);
