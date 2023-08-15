@@ -9,3 +9,19 @@
 // app.listen(3000);
 // Print a message to the console indicating that the server is running on port 3000:
 // console.log("App running on port 3000");
+
+// routing
+const express = require("express");
+const app = express();
+
+app.get("/", function (req, res) {
+  res.send("Hello World from diwash karki");
+});
+app.post("/", function (req, res) {
+  res.send("Push request is called");
+});
+app.delete("/", function (req, res) {
+  res.send("delete request is called");
+});
+app.listen(3000);
+console.log("App running on port 3000");
